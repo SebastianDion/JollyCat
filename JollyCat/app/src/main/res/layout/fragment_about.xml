@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/appColor"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/txtPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textSize="32sp"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/isi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="
+  JollyCat, sebuah perusahaan inovatif yang berdedikasi untuk menghubungkan pecinta kucing dengan hewan peliharaan berbulu yang sempurna. Saat ini, Jollycat berusaha menjangkau lebih banyak pelanggan dengan membuat aplikasi seluler berbasis sistem operasi Android yang dapat diunduh oleh pelanggan. Jadi, pelanggan dapat memesan kucing dari ujung jari mereka di mana saja dan kapan saja. Aplikasi ini menyediakan fitur autentikasi pengguna, melihat semua kucing, membeli kucing, dan memeriksa lokasi toko melalui Google Map."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="gravity"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+
+</LinearLayout>

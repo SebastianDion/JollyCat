@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/appColor"
+    tools:context=".ActivityCatsDetailPage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/catImageIV"
+            android:scaleType="fitStart"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:src="@drawable/cat_img_1" />
+        <TextView
+            android:id="@+id/detailCatNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:text="CAT 1"/>
+
+        <TextView
+            android:id="@+id/detailCatPriceTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Rp 300.000"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:fillViewport="true"
+            android:scrollbars="vertical"
+            app:layout_constraintHeight_max="10000dp">
+            <TextView
+                android:id="@+id/detailCatDescTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum"
+                android:layout_marginHorizontal="10dp" />
+        </ScrollView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <EditText
+            android:id="@+id/quantityET"
+            android:background="#aa00ff"
+            android:paddingHorizontal="10dp"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/white"
+            android:inputType="number"
+            android:hint="Input Quantity Here"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/purchaseBtn"
+            android:text="BUY"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

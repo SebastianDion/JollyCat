@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@color/appColor"
+    tools:context=".ActivityLogin">
+    <TextView
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/loginUsernameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:background="@color/white"
+        android:hint="your username"
+        android:textColorHint="@color/teal_700"/>
+    <TextView
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/loginPasswordET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:background="@color/white"
+        android:hint="your password"
+        android:textColorHint="@color/teal_700"
+        />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:text="login"
+        app:cornerRadius="10dp" />
+
+    <Button
+        android:id="@+id/goToRegisterBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        android:text="register here"
+        app:cornerRadius="10dp" />
+</LinearLayout>
